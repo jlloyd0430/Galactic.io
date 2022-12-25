@@ -28,7 +28,7 @@ main {
 }
 
 img {
-	float: right;
+	/* float: right; */
 	height: 750px;
 	width: auto;
 	
@@ -56,6 +56,7 @@ img {
 nav {
 	font-family: 'Alfa Slab One', sans-serif;
 	height: 85px;
+	border-bottom: solid rgb(203, 84, 24);
 }
 
 nav h1 {
@@ -67,7 +68,7 @@ nav h1 {
 }
 
 nav a {
-	color: rgb(203, 84, 24);
+	color: #fff;	
 	text-decoration: none;
 	float: right;
 	margin: 20px;
@@ -80,48 +81,54 @@ nav a {
 	/* margin-right: 200px; */
 }
 
-.button {
-
+ .button {
+ border: solid 1px rgb(203, 84, 24);
 	margin: 15px;
-	background-color: rgb(203, 84, 24);
 	text-align: center;
 	color: #fff;
 	border-radius: 50px;
 	width: 100px;
-	height: 30px;
 	float: right;
 	margin-top: 20px;
-	padding-top: 4px;
-}
+	padding: 8px;
+} 
+
+
+
 
 .signup-button {
+	display: block;
 	text-decoration: none;
-margin: 15px;
-	background-color: rgb(203, 84, 24);
+	margin: 15px;
+	border: solid 1px rgb(203, 84, 24);
 	text-align: center;
 	color: #fff;
 	border-radius: 50px;
 	width: 100px;
 	height: 30px;
 	margin-top: 25px;
-	padding: 8px;
+	padding: 3px;
 }
 
 .apply-button {
-text-decoration: none;
+	display: block;
+  text-decoration: none;
 	margin: 15px;
-	background-color: rgb(203, 84, 24);
+	border: solid 1px rgb(203, 84, 24);
 	text-align: center;
 	color: #fff;
 	border-radius: 50px;
 	width: 100px;
 	height: 30px;
 	margin-top: 25px;
-	padding: 8px;
+	padding: 3px;
 }
 
 
 @media(max-width:700px) {
+	main {
+		display: block;
+	}
 	nav h1 {
 		text-align: center;
 		display: block;
@@ -129,13 +136,54 @@ text-decoration: none;
 
 	nav a {
 		display: block;
+		margin: 15px;
+
 	}
 
-	/* main {
+	footer {
 		display: block;
-	} */
+	}
 
 	nav button {
 		display: block;
+	}
+
+	img {
+		margin-top: 25px;
+			height: 550px;
+				width: auto;
+	}
+}
+
+
+
+@media(max-width:400px) {
+main {
+		display: block;
+	}
+
+	nav h1 {
+		text-align: center;
+		display: block;
+	}
+
+	nav a {
+		display: block;
+		margin: 15px;
+
+	}
+
+	footer {
+		display: block;
+	}
+
+	nav button {
+		display: block;
+	}
+
+	img {
+		margin-top: 25px;
+		height: 425px;
+		width: auto;
 	}
 }

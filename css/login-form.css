@@ -68,6 +68,7 @@ button {
 nav {
   font-family: 'Alfa Slab One', sans-serif;
   height: 85px;
+  border-bottom: solid rgb(203, 84, 24);
 }
 
 nav h1 {

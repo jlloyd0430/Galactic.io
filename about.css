@@ -85,9 +85,9 @@ img {
 .button {
 
   margin: 15px;
-  background-color: #fff;
+  border: solid 1px rgb(203, 84, 24);
   text-align: center;
-  color: rgb(203, 84, 24);
+  color: #fff;
   border-radius: 50px;
   width: 100px;
   height: 30px;
@@ -95,6 +95,7 @@ img {
   margin-top: 20px;
   padding-top: 8px;
 }
+
 
 .signup-button {
 
@@ -112,13 +113,27 @@ img {
 section .text-wrapper p:first-of-type {
   font-weight: 700;
   font-style: italic;
-  opacity: .4;
+  /* opacity: .4; */
   margin-top: 3px;
 }
 
 
 @media (max-width: 715px) {
  
+.button {
+
+    margin: 15px;
+    border: solid 1px rgb(203, 84, 24);
+    text-align: center;
+    color: #fff;
+    border-radius: 50px;
+    width: 100px;
+    height: 30px;
+    float: right;
+    margin-top: 20px;
+    padding-top: 8px;
+  }
+
 
  nav {
    display: inline;
@@ -159,6 +174,23 @@ section .text-wrapper p:first-of-type {
 
 
 @media (min-width: 600px) {
+
+.button {
+
+    margin: 15px;
+    border: solid 1px rgb(203, 84, 24);
+    text-align: center;
+    color: #fff;
+    border-radius: 50px;
+    width: 100px;
+    height: 30px;
+    float: right;
+    margin-top: 20px;
+    padding-top: 8px;
+  }
+
+
+
   h1 {
     font-size: 7.5vw;
   }
@@ -187,7 +219,7 @@ section .text-wrapper p:first-of-type {
  .button {
 
   margin: 15px;
-  background-color: rgb(203, 84, 24);
+  border: solid 1px rgb(203, 84, 24);
   text-align: center;
   color: #fff;
   border-radius: 50px;

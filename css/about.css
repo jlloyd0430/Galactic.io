@@ -29,9 +29,24 @@ h1 {
    height: 180px;
  }
 
+ .button {
+
+   margin: 15px;
+   border: solid 1px rgb(203, 84, 24);
+   text-align: center;
+   color: #fff;
+   border-radius: 50px;
+   width: 100px;
+   height: 30px;
+   float: right;
+   margin-top: 20px;
+   padding-top: 8px;
+ }
+
 nav {
   font-family: 'Alfa Slab One', sans-serif;
   height: 85px;
+  border-bottom: solid rgb(203, 84, 24);
 }
 
 nav h1 {
@@ -43,7 +58,7 @@ nav h1 {
 }
 
 nav a {
-  color: rgb(203, 84, 24);
+  color: #fff;
   text-decoration: none;
   float: right;
   margin: 20px;
@@ -80,45 +95,33 @@ img {
 .signup {
   display: block;
   /* margin-right: 200px; */
-} */
+} 
 
-.button {
 
-  margin: 15px;
-  background-color: #fff;
-  text-align: center;
-  color: rgb(203, 84, 24);
-  border-radius: 50px;
-  width: 100px;
-  height: 30px;
-  float: right;
-  margin-top: 20px;
-  padding-top: 8px;
-}
-
-.signup-button {
-
-  margin: 15px;
-  background-color: #fff;
-  text-align: center;
-  color: rgb(203, 84, 24);
-  border-radius: 50px;
-  width: 100px;
-  height: 30px;
-  margin-top: 25px;
-  padding: 8px;
-}
 
 section .text-wrapper p:first-of-type {
   font-weight: 700;
   font-style: italic;
-  opacity: .4;
+  /* opacity: .4; */
   margin-top: 3px;
 }
 
 
 @media (max-width: 715px) {
  
+.button {
+
+    margin: 15px;
+    border: solid 1px rgb(203, 84, 24);
+    text-align: center;
+    color: #fff;
+    border-radius: 50px;
+    width: 100px;
+    height: 30px;
+    float: right;
+    margin-top: 20px;
+    padding-top: 8px;
+  }
 
  nav {
    display: inline;
@@ -152,13 +155,24 @@ section .text-wrapper p:first-of-type {
     margin-right: 30px;
   }
 }
- 
-
-
-
 
 
 @media (min-width: 600px) {
+
+.button {
+
+    margin: 15px;
+    border: solid 1px rgb(203, 84, 24);
+    text-align: center;
+    color: #fff;
+    border-radius: 50px;
+    width: 100px;
+    height: 30px;
+    float: right;
+    margin-top: 20px;
+    padding-top: 8px;
+  }
+
   h1 {
     font-size: 7.5vw;
   }
@@ -187,7 +201,7 @@ section .text-wrapper p:first-of-type {
  .button {
 
   margin: 15px;
-  background-color: rgb(203, 84, 24);
+  border: solid 1px rgb(203, 84, 24);
   text-align: center;
   color: #fff;
   border-radius: 50px;

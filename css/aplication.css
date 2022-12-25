@@ -6,6 +6,7 @@ body {
    font-family: 'Alfa Slab One', sans-serif;
    height: 85px;
    margin-bottom: 80px;
+  border-bottom: solid rgb(203, 84, 24);
  }
 
  nav h1 {
