@@ -43,7 +43,6 @@ let response = document.getElementById("response");
 // end login function
 
 // 11. Add an `else` part to run if either the username or password are incorrect:
-
 function login(event) {
   event.preventDefault();
 
@@ -57,6 +56,9 @@ function login(event) {
     pswdBox.style.display = "none"; // hide password field
     loginBtn.style.display = "none"; // hide Log In button
     plsLogin.style.display = "none"; // hide Please Log In
+
+    // Redirect to index.html
+    window.location.href = "file:///C:/path/to/index.html";
   } else {
     response.textContent = "Log in failed. Try again.";
   }

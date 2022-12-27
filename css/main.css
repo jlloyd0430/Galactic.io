@@ -76,6 +76,21 @@ nav a {
 
 }
 
+.nav-buttons {
+	display: inline-block;
+}
+
+.menu-icon {
+	display: none;
+	font-size: 40px;
+	margin: auto;
+	padding: 15px;
+}
+
+.menu-icon:focus+nav a {
+	display: block;
+}
+
 .signup {
 	display: block;
 	/* margin-right: 200px; */
@@ -131,14 +146,36 @@ nav a {
 	}
 	nav h1 {
 		text-align: center;
-		display: block;
+		display: inline-flex;
 	}
 
-	nav a {
-		display: block;
-		margin: 15px;
+		nav a {
+			display: none;
+			margin: 10px 0;
+		}
 
+	.menu-icon {
+		display: block;
+		font-size: 40px;
+			margin: auto;
 	}
+		.menu-icon:focus+nav a {
+			display: block;
+		}
+	
+				.nav-buttons {
+					display: none;
+					margin: 10px 0;
+				}
+				.button {
+					display: none;
+				}
+
+
+nav.vertical .nav-buttons {
+	display: block;
+	width: 100%;
+}
 
 	footer {
 		display: block;
@@ -164,14 +201,33 @@ main {
 
 	nav h1 {
 		text-align: center;
-		display: block;
+		display: inline-flex;
 	}
 
-	nav a {
-		display: block;
-		margin: 15px;
+		nav a {
+			display: none;
+			margin: 10px 0;
+		}
 
-	}
+ .menu-icon {
+	display: block;
+	font-size: 40px;
+		margin: auto; 
+}
+
+				.menu-icon:focus+nav a {
+					display: block;
+				}
+		
+				.nav-buttons {
+					display: none;
+					margin: 10px 0;
+				}
+		
+				.button {
+					display: none;
+				}
+				
 
 	footer {
 		display: block;

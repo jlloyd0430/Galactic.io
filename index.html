@@ -20,14 +20,19 @@
 
 <body>
 
-	<nav>
-		<h1>Galactic.io</h1>
-		<a class="button" href="login.html">Login</a>
-		<a href="nfts.html">NFTs</a>
-		<a href="bulliten.html">Bulliten</a>
-		<a href="about.html">About</a>
-		<a href="index.html">Home</a>
-	</nav>
+<nav>
+	<a class="menu-icon" href="#">&#9776;</a>
+	
+	<h1>Galactic.io</h1>
+	<!-- <div class="nav-buttons"></div> -->
+	<a class="button" href="login.html">Login</a>
+	<a class="nav-buttons" href="nfts.html">NFTs</a>
+	<a class="nav-buttons" href="bulliten.html">Bulliten</a>
+	<a class="nav-buttons" href="about.html">About</a>
+	<a class="nav-buttons" href="index.html">Home</a>
+	<!-- </div> -->
+</nav>
+
 
 	<main>
 
@@ -53,5 +58,16 @@ hello
 <footer>
 	
 </footer>
+<script>
+	const navIcon = document.querySelector('.menu-icon');
+
+		navIcon.addEventListener('click', function () {
+			const nav = document.querySelector('nav');
+			nav.classList.toggle('vertical');
+			// nav.classList.toggle('right');
+		});
+
+
+</script>
 
 </html>

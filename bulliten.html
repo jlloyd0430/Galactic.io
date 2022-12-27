@@ -123,9 +123,19 @@ nav a {
 
   }
 
-  li {
-    color: lightgrey;
-  }
+  ul {
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  list-style: none;
+   color: lightgrey;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
 
   .container {
     width: 250px;
@@ -160,6 +170,7 @@ nav a {
   }
 
   .text-wrapper2 {
+    display: block;
     border: solid rgb(203, 84, 24) 4px;
     background-color: black;
     border-radius: 10px;
@@ -171,6 +182,7 @@ nav a {
   }
 
   .text-wrapper3 {
+    display: block;
     border: solid rgb(203, 84, 24) 4px;
     background-color: black;
     border-radius: 10px;
@@ -178,6 +190,7 @@ nav a {
     /* height: 600px; */
     /* width: 700px; */
     margin: 10px;
+    margin-top: 50px;
 
   }
 
@@ -234,12 +247,12 @@ nav a {
       <div class="text-wrapper">
     <h2>Blockchain</h2>
     <ul>
-      <li>Cardano</li>
-      <li>Ethereum</li>
-      <li>Solana</li>
-      <li>Cronos</li>
-      <li>Vechain</li>
-      <li>Hbar</li>
+      <li><input type="checkbox">Cardano</li>
+      <li><input type="checkbox">Ethereum</li>
+      <li><input type="checkbox">Solana</li>
+      <li><input type="checkbox">Cronos</li>
+      <li><input type="checkbox">Vechain</li>
+      <li><input type="checkbox">Hbar</li>
     </ul>
       </div>
     </section>
@@ -264,22 +277,20 @@ nav a {
       
     </section>
 
-    <section >
-     <div class="text-wrapper3">
-    <h2>Weekly News</h2>
-    <ul>
-      <li>Cardano</li>
-      <li>Ethereum</li>
-      <li>Solana</li>
-      <li>Cronos</li>
-      <li>Vechain</li>
-      <li>Hbar</li>
-    </ul>
-      </div>
-    </section>
-
 </main>
-  
+  <section>
+    <div class="text-wrapper3">
+      <h2>Community Resources/tools </h2>
+      <ul>
+        <li><a>Cardano</a></li>
+        <li><a>Ethereum</a></li>
+        <li><a>Solana</a></li>
+        <li><a>Cronos</a></li>
+        <li><a>Vechain</a></li>
+        <li><a>Hbar</a></li>
+      </ul>
+    </div>
+  </section>
 </body>
 
 <footer>

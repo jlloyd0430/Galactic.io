@@ -9,6 +9,8 @@ body {
   border-bottom: solid rgb(203, 84, 24);
  }
 
+
+
  nav h1 {
    font-family: 'Alfa Slab One', sans-serif;
    font-size: 40px;
@@ -27,11 +29,21 @@ body {
 
  }
 
+.login-button {
+  text-transform: uppercase;
+  border: solid 1px rgb(203, 84, 24);
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 11px;
+}
+
 div {
   width: 500px;
   margin: 50px auto;
   padding: 20px auto 20px 20px;
-  background-color: #fff;
+  /* background-color: #fff; */
   height: 400px;
   text-align: left;
   padding: 20px;
@@ -47,6 +59,7 @@ div {
 }
 
 input {
+  border-radius: 11px;
   font-size: 1em;
   padding: 5px 5px 5px 8px;
   display: block;
@@ -63,15 +76,20 @@ select {
   width: 240px;
 }
 
-button {
+.btn-1 {
   text-transform: uppercase;
-  background-color: rgb(203, 84, 24);
-  font-weight: bold;
-  letter-spacing: 2px;
-  color: #fff;
-  cursor: pointer;
+    background-color: rgb(203, 84, 24);
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 11px;
 }
 
+
+textarea {
+  border-radius: 11px;
+}
 
 
 /* target inputs of type="number" only */
