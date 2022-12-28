@@ -171,6 +171,7 @@ nav a {
 					display: none;
 				}
 
+					
 
 nav.vertical .nav-buttons {
 	display: block;
@@ -233,6 +234,8 @@ main {
 		display: block;
 	}
 
+
+	
 	nav button {
 		display: block;
 	}
@@ -242,4 +245,6 @@ main {
 		height: 425px;
 		width: auto;
 	}
+
+
 }

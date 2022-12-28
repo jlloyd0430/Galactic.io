@@ -53,25 +53,42 @@
   nav {
     font-family: 'Alfa Slab One', sans-serif;
     height: 85px;
-    margin-bottom: 80px;
     border-bottom: solid rgb(203, 84, 24);
+    margin-bottom: 25px;
   }
+  
+nav h1 {
+	font-family: 'Alfa Slab One', sans-serif;
+	font-size: 40px;
+	margin: 20px;
+	/* margin-top: 20px; */
+	display: inline-block;
+}
 
-  nav h1 {
-    font-family: 'Alfa Slab One', sans-serif;
-    font-size: 40px;
-    margin: 20px;
-    display: inline-block;
-  }
+nav a {
+	color: #fff;	
+	text-decoration: none;
+	float: right;
+	margin: 20px;
+	margin-top: 30px;
 
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    float: right;
-    margin: 20px;
-    margin-top: 30px;
+}
 
-  }
+.nav-buttons {
+	display: inline-block;
+  font-size: 16px;
+}
+
+.menu-icon {
+	display: none;
+	font-size: 40px;
+	margin: auto;
+	padding: 15px;
+}
+
+.menu-icon:focus+nav a {
+	display: block;
+}
 
   .signup {
     display: block;
@@ -94,6 +111,7 @@
 
 
   img {
+    border: solid 5px rgb(203, 84, 24);
     display: none;
     width: 270px;
     height: 235px;
@@ -163,10 +181,9 @@ h2 {
   .primary {
     margin: auto;
     display: block;
-    border: solid rgb(203, 84, 24) 4px;
     border-radius: 10px;
     padding: 15px;
-     /* height: 255px; */
+     /* height: 140px; */
     width: 290px;
   }
 
@@ -252,7 +269,7 @@ h2 {
   }
 
 
-  @media(max-width:700px) {
+  /* @media(max-width:700px) {
     nav h1 {
       text-align: center;
       display: block;
@@ -265,18 +282,69 @@ h2 {
     nav button {
       display: block;
     }
-  }
+  } */
+
+
+@media(max-width:765px) {
+	main {
+		display: block;
+	}
+	nav h1 {
+		text-align: center;
+		display: inline-flex;
+	}
+
+		nav a {
+			display: none;
+			margin: 10px 0;
+		}
+
+	.menu-icon {
+		display: block;
+		font-size: 40px;
+			margin: auto;
+	}
+		.menu-icon:focus+nav a {
+			display: block;
+		}
+	
+				.nav-buttons {
+					display: none;
+					margin: 10px 0;
+				}
+				.button {
+					display: none;
+				}
+
+					
+
+nav.vertical .nav-buttons {
+	display: block;
+	width: 100%;
+}
+
+	footer {
+		display: block;
+	}
+
+	nav button {
+		display: block;
+	}
+}
 </style>
 
 <body>
 
   <nav>
+    <a class="menu-icon" href="#">&#9776;</a>
+  
     <h1>Galactic.io</h1>
+  
     <a class="button" href="login.html">Login</a>
-    <a href="nfts.html">NFTs</a>
-    <a href="bulliten.html">Bulliten</a>
-    <a href="about.html">About</a>
-    <a href="index.html">Home</a>
+    <a class="nav-buttons" href="nfts.html">NFTs</a>
+    <a class="nav-buttons" href="bulliten.html">Bulliten</a>
+    <a class="nav-buttons" href="about.html">About</a>
+    <a class="nav-buttons" href="index.html">Home</a>
   </nav>
 
   <main>
@@ -352,6 +420,15 @@ if(i == images.length) {
  }, 2500);
 
 
+  
+    const navIcon = document.querySelector('.menu-icon');
+
+    navIcon.addEventListener('click', function () {
+			const nav = document.querySelector('nav');
+    nav.classList.toggle('vertical');
+    // nav.classList.toggle('right');
+    console.log(nav.classList);
+		});
 
   
 </script>

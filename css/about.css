@@ -66,6 +66,21 @@ nav a {
 
 }
 
+.nav-buttons {
+  display: inline-block;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 40px;
+  margin: auto;
+  padding: 15px;
+}
+
+.menu-icon:focus+nav a {
+  display: block;
+}
+
 img {
   border-radius: 10px;
   max-width: 100%;
@@ -81,9 +96,10 @@ img {
    border: solid rgb(203, 84, 24) 4px;
    border-radius: 10px;
    padding: 20px;
-
+  margin-left: 10px;
+  margin-right: 10px;
    flex-basis: 33.33%;
-   margin: auto;
+   /* margin: auto; */
  }
  section:not(:last-child) {
    margin-right: 30px;
@@ -109,8 +125,19 @@ section .text-wrapper p:first-of-type {
 
 @media (max-width: 715px) {
  
-.button {
+main {
+    display: inline;
+    align-items: center;
+    max-width: 1310px;
+    margin: 30px auto;
+  }
 
+    nav.vertical .nav-buttons {
+      display: block;
+      width: 100%;
+    }
+
+.button {
     margin: 15px;
     border: solid 1px rgb(203, 84, 24);
     text-align: center;
@@ -123,25 +150,39 @@ section .text-wrapper p:first-of-type {
     padding-top: 8px;
   }
 
- nav {
-   display: inline;
- }
+
 
   nav a {
-    display: inline-block;
+    display: none;
+    margin: 10px 0;
   }
 
 
   nav h1 {
-    display: inline;
+    display: inline-flex;
   }
 
-    main {
-      display: inline;
-      align-items: center;
-      max-width: 1310px;
-      margin: 30px auto;
-    }
+.menu-icon {
+  display: block;
+  font-size: 40px;
+  margin: auto;
+}
+
+.menu-icon:focus+nav a {
+  display: block;
+}
+
+.nav-buttons {
+  display: none;
+  margin: 10px 0;
+}
+
+.button {
+  display: none;
+}
+
+
+
 
     section {
       border: solid rgb(203, 84, 24) 4px;
@@ -157,7 +198,12 @@ section .text-wrapper p:first-of-type {
 }
 
 
-@media (min-width: 600px) {
+@media (max-width: 700px) {
+
+nav.vertical .nav-buttons {
+    display: block;
+    width: 100%;
+  }
 
 .button {
 
@@ -182,19 +228,37 @@ section .text-wrapper p:first-of-type {
     margin: 30px;
   }
 
-  nav {
-    /* display: flex; */
-    align-items: center;
-    
-    /* padding: 20px 30px; */
-  }
+nav h1 {
+  text-align: center;
+  display: inline-flex;
+}
+
+nav a {
+  display: none;
+  margin: 10px 0;
+}
+
+.menu-icon {
+  display: block;
+  font-size: 40px;
+  margin: auto;
+}
+
+.menu-icon:focus+nav a {
+  display: block;
+}
+
+.nav-buttons {
+  display: none;
+  margin: 10px 0;
+}
+
+.button {
+  display: none;
+}
+
 
  
-
-  nav li:last-of-type a {
-    margin-right: 0;
-  }
-
  .section {
    margin: 30px;
  }
@@ -211,6 +275,60 @@ section .text-wrapper p:first-of-type {
   margin-top: 20px;
   padding-top: 8px;
 }
+
+}
+
+@media(max-width:400px) {
+  main {
+    display: block;
+  }
+
+  nav h1 {
+    text-align: center;
+    display: inline-flex;
+  }
+
+  nav a {
+    display: none;
+    margin: 10px 0;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 40px;
+    margin: auto;
+  }
+
+  .menu-icon:focus+nav a {
+    display: block;
+  }
+
+  .nav-buttons {
+    display: none;
+    margin: 10px 0;
+  }
+
+  .button {
+    display: none;
+  }
+
+
+  footer {
+    display: block;
+  }
+
+
+
+  nav button {
+    display: block;
+  }
+
+  img {
+    margin-top: 25px;
+    height: 425px;
+    width: auto;
+  }
+
 
 }
 
