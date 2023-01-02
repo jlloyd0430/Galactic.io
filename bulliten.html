@@ -77,10 +77,18 @@ nav a:hover {
 	color: rgb(203, 84, 24);
 }
 
-  .signup {
-    display: block;
-    
-  }
+.menu-icon {
+	display: none;
+	font-size: 40px;
+	margin: auto;
+	padding: 15px;
+}
+
+.menu-icon:focus+nav a {
+	display: block;
+}
+
+ 
 
   .button {
 
@@ -130,6 +138,7 @@ nav a:hover {
   ul {
   display: flex;
   flex-direction: column;
+  padding: 5px;
 }
 
 li {
@@ -157,12 +166,13 @@ input[type="checkbox"] {
 
   .primary {
     display: flex;
-    margin: auto;
+    margin: 30px;
     background-color:rgb(203, 84, 24) ;
     display: block;
     border: solid rgb(203, 84, 24) 4px;
     border-radius: 10px;
     padding: 15px;
+    flex-basis: 100%;
    
   }
  
@@ -182,7 +192,7 @@ input[type="checkbox"] {
     border-radius: 10px;
     padding: 15px;
     height: 600px;
-    max-width: 700px;
+    /* max-width: 700px; */
     margin: 0 auto;
     flex: 100%;
   }
@@ -220,7 +230,7 @@ input[type="checkbox"] {
 }
 
  
-  @media(max-width:960px) {
+  @media(max-width:850px) {
     main {
       display: block;
     }
@@ -248,11 +258,61 @@ input[type="checkbox"] {
     flex: 100%;
     }
   }
+
+
+@media(max-width:850px) {
+	main {
+		display: block;
+	}
+	nav h1 {
+		text-align: center;
+		display: inline-flex;
+	}
+
+		nav a {
+			display: none;
+			margin: 10px 0;
+		}
+
+	.menu-icon {
+		display: block;
+		font-size: 40px;
+			margin: auto;
+	}
+		.menu-icon:focus+nav a {
+			display: block;
+		}
+	
+				.nav-buttons {
+					display: none;
+					margin: 10px 0;
+				}
+				.button {
+					display: none;
+				}
+
+					
+
+nav.vertical .nav-buttons {
+	display: block;
+	width: 100%;
+}
+
+	footer {
+		display: block;
+	}
+
+	nav button {
+		display: block;
+	}
+}
 </style>
 
 <body>
 
   <nav>
+<a class="menu-icon" href="#">&#9776;</a>
+
     <h1>Galactic.io</h1>
     <a class="button" href="login.html">Login</a>
     <a href="nfts.html">NFTs</a>
@@ -316,5 +376,17 @@ input[type="checkbox"] {
 <footer>
 
 </footer>
+
+<script>
+
+  const navIcon = document.querySelector('.menu-icon');
+
+  navIcon.addEventListener('click', function () {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('vertical');
+    // nav.classList.toggle('right');
+    console.log(nav.classList);
+  });
+</script>
 
 </html>
