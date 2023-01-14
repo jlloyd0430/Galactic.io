@@ -112,6 +112,15 @@ img {
    order: -1;
  } 
 
+ h2 {
+  text-align: center;
+  border-bottom: solid 1px rgb(203, 84, 24);
+ }
+
+ p {
+  color: #fff;
+ }
+
 .signup {
   display: block;
   /* margin-right: 200px; */

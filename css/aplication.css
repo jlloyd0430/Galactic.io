@@ -21,7 +21,7 @@ body {
  }
 
  nav a {
-   color: rgb(203, 84, 24);
+   color: #fff;
    text-decoration: none;
    float: right;
    margin: 20px;
@@ -29,14 +29,22 @@ body {
 
  }
 
-.login-button {
-  text-transform: uppercase;
+ nav a:hover {
+   color: rgb(203, 84, 24);
+ }
+
+.login-btn {
+
+  margin: 15px;
   border: solid 1px rgb(203, 84, 24);
-  font-weight: bold;
-  letter-spacing: 2px;
+  text-align: center;
   color: #fff;
-  cursor: pointer;
-  border-radius: 11px;
+  border-radius: 50px;
+  width: 100px;
+  height: 30px;
+  /* float: right; */
+  margin-top: 20px;
+  padding-top: 8px;
 }
 
 div {
@@ -110,6 +118,8 @@ label {
   font-size: 1em;
   font-family: sans-serif;
 }
+
+
  
 h4 {
   width: 250px;
