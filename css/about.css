@@ -90,7 +90,7 @@ img {
   max-width: 100%;
 }
 
- main {
+ .About {
    display: flex;
    align-items: center;
    max-width: 1310px;

@@ -27,7 +27,7 @@ main {
 	/* height: 384px; */
 }
 
-img {
+.cat {
 	/* float: right; */
 	height: 750px;
 	width: auto;
@@ -95,9 +95,52 @@ nav a:hover {
 	display: block;
 }
 
+.about-imgs {
+	border-radius: 10px;
+	max-width: 100%;
+}
+
+.About {
+	display: flex;
+	align-items: center;
+	max-width: 1310px;
+	margin: 30px auto;
+}
+
+section {
+	border: solid rgb(203, 84, 24) 4px;
+	border-radius: 10px;
+	padding: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	flex-basis: 33.33%;
+	/* margin: auto; */
+}
+
+section:not(:last-child) {
+	margin-right: 30px;
+}
+
+section.secondary {
+	order: -1;
+}
+
+h2 {
+	text-align: center;
+	border-bottom: solid 1px rgb(203, 84, 24);
+}
+
+p {
+	color: #fff;
+}
+
 .signup {
 	display: block;
 	/* margin-right: 200px; */
+}
+
+.home-buttons {
+display: flex;
 }
 
  .button {
@@ -148,6 +191,13 @@ nav a:hover {
 	main {
 		display: block;
 	}
+
+	.About {
+		 	display: inline;
+		 	align-items: center;
+		 	max-width: 1310px;
+		 	margin: 30px auto;
+		 }
 	nav h1 {
 		text-align: center;
 		display: inline-flex;
@@ -190,11 +240,23 @@ nav.vertical .nav-buttons {
 		display: block;
 	}
 
-	img {
+	.cat {
 		margin-top: 25px;
 			height: 550px;
 				width: auto;
 	}
+
+		 section {
+		 	border: solid rgb(203, 84, 24) 4px;
+		 	border-radius: 10px;
+		 	padding: 20px;
+		 	flex-basis: 33.33%;
+		 	margin: 30px;
+		 }
+	
+		 section:not(:last-child) {
+		 	margin-right: 30px;
+		 }
 }
 
 
@@ -203,6 +265,13 @@ nav.vertical .nav-buttons {
 main {
 		display: block;
 	}
+
+		 .About {
+		 	display: inline;
+		 	align-items: center;
+		 	max-width: 1310px;
+		 	margin: 30px auto;
+		 }
 
 	nav h1 {
 		text-align: center;
@@ -232,6 +301,17 @@ main {
 				.button {
 					display: none;
 				}
+								 section {
+								 	border: solid rgb(203, 84, 24) 4px;
+								 	border-radius: 10px;
+								 	padding: 20px;
+								 	flex-basis: 33.33%;
+								 	margin: 30px;
+								 }
+				
+								 section:not(:last-child) {
+								 	margin-right: 30px;
+								 }
 				
 
 	footer {
@@ -244,7 +324,7 @@ main {
 		display: block;
 	}
 
-	img {
+	.cat {
 		margin-top: 25px;
 		height: 425px;
 		width: auto;
