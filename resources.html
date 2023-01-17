@@ -6,7 +6,371 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resources</title>
 </head>
+
+<style>
+
+
+body {
+  font-family: 'Alfa Slab One', sans-serif;
+  background-color: black;
+  color: rgb(203, 84, 24);
+  font-family: sans-serif;
+  padding: auto;
+  margin: auto;
+  height: 769px;
+}
+
+h1 {
+  color: rgb(203, 84, 24);
+}
+
+
+.phrase {
+  margin-top: 200px;
+  margin-left: 50px;
+  display: inline-block;
+  width: 300px;
+  height: 250px;
+
+}
+
+ footer {
+   background-color: rgb(203, 84, 24);
+   height: 180px;
+ }
+
+ .button {
+
+   margin: 15px;
+   border: solid 1px rgb(203, 84, 24);
+   text-align: center;
+   color: #fff;
+   border-radius: 50px;
+   width: 100px;
+   height: 30px;
+   float: right;
+   margin-top: 20px;
+   padding-top: 8px;
+ }
+
+nav {
+  font-family: 'Alfa Slab One', sans-serif;
+  height: 85px;
+  border-bottom: solid rgb(203, 84, 24);
+}
+
+nav h1 {
+  font-family: 'Alfa Slab One', sans-serif;
+  font-size: 40px;
+  margin: 20px;
+  /* margin-top: 20px; */
+  display: inline-block;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  float: right;
+  margin: 20px;
+  margin-top: 30px;
+
+}
+
+nav a:hover {
+  color: rgb(203, 84, 24);
+}
+
+.nav-buttons {
+  display: inline-block;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 40px;
+  margin: auto;
+  padding: 15px;
+}
+
+.menu-icon:focus+nav a {
+  display: block;
+}
+
+img {
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+ .About {
+   display: flex;
+   align-items: center;
+   max-width: 1310px;
+   margin: 30px auto;
+ }
+ section {
+   border: solid rgb(203, 84, 24) 4px;
+   border-radius: 10px;
+   padding: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+   flex-basis: 33.33%;
+   /* margin: auto; */
+ }
+ section:not(:last-child) {
+   margin-right: 30px;
+     }
+ section.secondary {
+   order: -1;
+ } 
+
+ h2 {
+  text-align: center;
+  border-bottom: solid 1px rgb(203, 84, 24);
+ }
+
+ p {
+  color: #fff;
+ }
+
+.signup {
+  display: block;
+  /* margin-right: 200px; */
+} 
+
+
+
+section .text-wrapper p:first-of-type {
+  font-weight: 700;
+  font-style: italic;
+  /* opacity: .4; */
+  margin-top: 3px;
+}
+
+
+@media (max-width: 715px) {
+ 
+main {
+    display: inline;
+    align-items: center;
+    max-width: 1310px;
+    margin: 30px auto;
+  }
+
+    nav.vertical .nav-buttons {
+      display: block;
+      width: 100%;
+    }
+
+.button {
+    margin: 15px;
+    border: solid 1px rgb(203, 84, 24);
+    text-align: center;
+    color: #fff;
+    border-radius: 50px;
+    width: 100px;
+    height: 30px;
+    float: right;
+    margin-top: 20px;
+    padding-top: 8px;
+  }
+
+
+
+  nav a {
+    display: none;
+    margin: 10px 0;
+  }
+
+
+  nav h1 {
+    display: inline-flex;
+  }
+
+.menu-icon {
+  display: block;
+  font-size: 40px;
+  margin: auto;
+}
+
+.menu-icon:focus+nav a {
+  display: block;
+}
+
+.nav-buttons {
+  display: none;
+  margin: 10px 0;
+}
+
+.button {
+  display: none;
+}
+
+
+
+
+    section {
+      border: solid rgb(203, 84, 24) 4px;
+      border-radius: 10px;
+      padding: 20px;
+      flex-basis: 33.33%;
+      margin: 30px;
+    }
+
+  section:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+
+@media (max-width: 700px) {
+
+nav.vertical .nav-buttons {
+    display: block;
+    width: 100%;
+  }
+
+.button {
+
+    margin: 15px;
+    border: solid 1px rgb(203, 84, 24);
+    text-align: center;
+    color: #fff;
+    border-radius: 50px;
+    width: 100px;
+    height: 30px;
+    float: right;
+    margin-top: 20px;
+    padding-top: 8px;
+  }
+
+  h1 {
+    font-size: 7.5vw;
+  }
+
+  main {
+    text-align: center;
+    margin: 30px;
+  }
+
+nav h1 {
+  text-align: center;
+  display: inline-flex;
+}
+
+nav a {
+  display: none;
+  margin: 10px 0;
+}
+
+.menu-icon {
+  display: block;
+  font-size: 40px;
+  margin: auto;
+}
+
+.menu-icon:focus+nav a {
+  display: block;
+}
+
+.nav-buttons {
+  display: none;
+  margin: 10px 0;
+}
+
+.button {
+  display: none;
+}
+
+
+ 
+ .section {
+   margin: 30px;
+ }
+ .button {
+
+  margin: 15px;
+  border: solid 1px rgb(203, 84, 24);
+  text-align: center;
+  color: #fff;
+  border-radius: 50px;
+  width: 100px;
+  height: 30px;
+  float: right;
+  margin-top: 20px;
+  padding-top: 8px;
+}
+
+}
+
+@media(max-width:400px) {
+  main {
+    display: block;
+  }
+
+  nav h1 {
+    text-align: center;
+    display: inline-flex;
+  }
+
+  nav a {
+    display: none;
+    margin: 10px 0;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 40px;
+    margin: auto;
+  }
+
+  .menu-icon:focus+nav a {
+    display: block;
+  }
+
+  .nav-buttons {
+    display: none;
+    margin: 10px 0;
+  }
+
+  .button {
+    display: none;
+  }
+
+
+  footer {
+    display: block;
+  }
+
+
+
+  nav button {
+    display: block;
+  }
+
+  img {
+    margin-top: 25px;
+    height: 425px;
+    width: auto;
+  }
+
+
+}
+</style>
+
 <body>
+
+<nav>
+  <a class="menu-icon" href="#">&#9776;</a>
+
+  <h1>Galactic.io</h1>
+  <!-- <div class="nav-buttons"></div> -->
+  <a class="button" href="login.html">Login</a>
+  <a class="nav-buttons" href="nfts.html">NFTs</a>
+  <a class="nav-buttons" href="bulliten.html">Bulliten</a>
+  <a class="nav-buttons" href="resources.html">Resources</a>
+  <a class="nav-buttons" href="index.html">Home</a>
+  <!-- </div> -->
+</nav>
+
   <div class="text-wrapper3">
     <h2>Community Resources/tools </h2>
     <ul>
